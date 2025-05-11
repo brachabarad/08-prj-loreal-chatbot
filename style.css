@@ -1,17 +1,17 @@
-/* —— basic reset —— */
+/* —— Basic Reset —— */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* —— body + fonts —— */
+/* —— Body and Fonts —— */
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #333;
   display: flex;
   justify-content: center;
-  background-color: #fff; /* White background */
+  background-color: #fff;
 }
 
 .page-wrapper {
@@ -19,7 +19,7 @@ body {
   max-width: 900px;
 }
 
-/* header */
+/* —— Header —— */
 .site-header {
   text-align: center;
   padding-top: 50px;
@@ -40,10 +40,9 @@ body {
   margin: 0 auto 10px;
   max-width: 150px;
   height: auto;
-  border: 2px solid #ffffff /* White border */
 }
 
-/* chat window */
+/* —— Chat Window —— */
 .chatbox {
   margin: 40px 0;
 }
@@ -59,10 +58,14 @@ body {
   white-space: pre-line;
 }
 
-/* messages */
+/* —— Message Bubbles —— */
 .msg {
-  margin-bottom: 14px;
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 16px;
   line-height: 1.5;
+  word-wrap: break-word;
 }
 
 .msg.user {
@@ -73,7 +76,7 @@ body {
   color: #666666; /* Neutral gray for AI messages */
 }
 
-/* input row */
+/* —— Input Row —— */
 .chat-form {
   display: flex;
   gap: 12px;
@@ -84,12 +87,7 @@ body {
   flex: 1;
   padding: 12px;
   border: 1px solid #ccc;
-  font-size: 18px;
-}
-
-.chat-form input:focus {
-  outline: 2px solid #e3a535; /* Red outline on focus */
-  outline-offset: 2px;
+  font-size: 16px;
 }
 
 .chat-form button {
@@ -104,11 +102,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.3s;
-}
-
-.chat-form button .material-icons {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .chat-form button:hover {
