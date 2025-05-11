@@ -11,6 +11,7 @@ body {
   color: #333;
   display: flex;
   justify-content: center;
+  background-color: #fff; /* White background */
 }
 
 .page-wrapper {
@@ -22,12 +23,24 @@ body {
 .site-header {
   text-align: center;
   padding-top: 50px;
+  color: #ff0038; /* Red text */
+  background-color: white; /* White background */
+  padding-bottom: 20px;
 }
 
 .site-title {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;
+  color: black  ; /* Black text */
+}
+
+.site-logo {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 150px;
+  height: auto;
+  border: 2px solid #ffffff /* White border */
 }
 
 /* chat window */
@@ -37,12 +50,12 @@ body {
 
 .chat-window {
   height: 360px;
-  border: 1px solid #000;
+  border: 2px solid #e3a535; /* Gold border */
   padding: 20px;
   font-size: 18px;
   line-height: 1.5;
   overflow-y: auto;
-  background: #fafafa;
+  background: #fafafa; /* Light background for contrast */
   white-space: pre-line;
 }
 
@@ -53,11 +66,11 @@ body {
 }
 
 .msg.user {
-  color: #000;
+  color: #e3a535; 
 }
 
 .msg.ai {
-  color: #666666;
+  color: #666666; /* Neutral gray for AI messages */
 }
 
 /* input row */
@@ -75,14 +88,14 @@ body {
 }
 
 .chat-form input:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #e3a535; /* Red outline on focus */
   outline-offset: 2px;
 }
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
-  color: #fff;
+  background: #e3a535;
+  color: #fff; /* White text */
   border: none;
   padding: 12px;
   width: 48px;
@@ -99,11 +112,11 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: #e3a535; /* Gold background on hover */
 }
 
 .chat-form button:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #000; /* Black outline on focus */
   outline-offset: 2px;
 }
 
@@ -126,6 +139,9 @@ body {
   text-align: center;
   font-size: 14px;
   color: #666;
+  background-color: #000; /* Black background for footer */
+  color: #fff; /* White text */
+  padding: 20px 0;
 }
 
 .site-footer nav {
@@ -134,10 +150,10 @@ body {
 
 .site-footer a {
   margin: 0 8px;
-  color: #000;
+  color: #ff0038; /* Red links */
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: #666666;
+  color: #e3a535; /* Gold on hover */
 }
