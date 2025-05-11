@@ -8,10 +8,10 @@
 /* —— Body and Fonts —— */
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #333;
+  color: #fff; /* Change text color to white for better contrast */
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #000; /* Set background to black */
 }
 
 .page-wrapper {
@@ -24,7 +24,6 @@ body {
   text-align: center;
   padding-top: 50px;
   color: #ff0038; /* Red text */
-  background-color: white; /* White background */
   padding-bottom: 20px;
 }
 
@@ -32,7 +31,7 @@ body {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;
-  color: black  ; /* Black text */
+  color: black; /* Black text */
 }
 
 .site-logo {
@@ -40,6 +39,15 @@ body {
   margin: 0 auto 10px;
   max-width: 150px;
   height: auto;
+}
+
+/* —— Branding Container —— */
+.branding-container {
+  border: 2px solid #ffffff;
+  background-color: #fafafa;
+  padding: 10px; /* Add spacing inside the border */
+  display: inline-block; /* Ensure the border wraps tightly around the content */
+  text-align: center; /* Center-align the content */
 }
 
 /* —— Chat Window —— */
@@ -66,14 +74,23 @@ body {
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .msg.user {
-  color: #e3a535; 
+  background-color: #ff0038; /* Red background for user messages */
+  color: #fff; /* White text */
 }
 
 .msg.ai {
-  color: #666666; /* Neutral gray for AI messages */
+  background-color: #e3a535; /* Gold background for assistant messages */
+  color: #000; /* Black text */
+}
+
+/* —— Typing Indicator —— */
+.msg.ai.typing {
+  font-style: italic;
+  color: #666; /* Grey color for typing indicator */
 }
 
 /* —— Input Row —— */
@@ -150,4 +167,11 @@ body {
 
 .site-footer a:hover {
   color: #e3a535; /* Gold on hover */
+}
+
+.timestamp {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
 }
